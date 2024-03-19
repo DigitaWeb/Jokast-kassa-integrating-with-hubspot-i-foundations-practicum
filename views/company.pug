@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    table
+      thead
+        tr
+          th Owner
+          th Domain Name
+      tbody
+        each company in companies.results
+          tr
+            td= company.properties.owner
+            td= company.properties.domain
